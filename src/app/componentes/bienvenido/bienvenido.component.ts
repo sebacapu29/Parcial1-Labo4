@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Pelicula } from 'src/app/clases/pelicula';
 import { Actor } from 'src/app/clases/actor';
 import { PeliculaService } from 'src/app/servicios/pelicula.service';
+import { PaisesService } from 'src/app/servicios/paises.service';
+import { Paises } from 'src/app/clases/paises';
 
 @Component({
   selector: 'app-bienvenido',
@@ -14,6 +16,7 @@ export class BienvenidoComponent implements OnInit {
   listaPeliculas:any;
   lista2Peliculas:Pelicula[];
   listaActores:Actor[];
+  listadoPaises:Paises[];
 
   constructor(private router:Router,private peliculaService:PeliculaService) {
     localStorage.removeItem("peliculas");
@@ -25,7 +28,7 @@ export class BienvenidoComponent implements OnInit {
         
     });
 
-   
+  
 
    var actores = this.mockActores();
    localStorage.setItem("actores",this.mockActores());
@@ -36,10 +39,10 @@ export class BienvenidoComponent implements OnInit {
    }
    mockActores(){
     this.listaActores = new Array<Actor>();
-    this.listaActores.push(new Actor(1,'Willard Carroll','Smith','M','25/09/1968','assets/actores/will-smith.jpg'));
-    this.listaActores.push(new Actor(2,'Keanu Charles','Reeves','M','2/09/1964','assets/actores/keanu-reevs.jpg'));
-    this.listaActores.push(new Actor(3,'James Eugene','Carrey','M','17/01/1962','assets/actores/jimcarrey.jpg'));
-    this.listaActores.push(new Actor(4,'Scarlett Ingrid','Johansson ','F','22/11/1984','assets/actores/scarlett.jpg'));
+    this.listaActores.push(new Actor(1,'Willard Carroll','Smith','M','25/09/1968','assets/actores/will-smith.jpg',''));
+    this.listaActores.push(new Actor(2,'Keanu Charles','Reeves','M','2/09/1964','assets/actores/keanu-reevs.jpg',''));
+    this.listaActores.push(new Actor(3,'James Eugene','Carrey','M','17/01/1962','assets/actores/jimcarrey.jpg',''));
+    this.listaActores.push(new Actor(4,'Scarlett Ingrid','Johansson ','F','22/11/1984','assets/actores/scarlett.jpg',''));
 
    return JSON.stringify(this.listaActores);
    }

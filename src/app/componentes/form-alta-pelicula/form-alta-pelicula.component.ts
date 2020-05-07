@@ -23,7 +23,7 @@ export class FormAltaPeliculaComponent implements OnInit {
     //  this.peliculaService.
   }
   ngOnInit(): void {
-    this.actorSeleccionado = new Actor(0,"-","-","-","-","-");
+    this.actorSeleccionado = new Actor(0,"-","-","-","-","-",'-');
   }
 
 }

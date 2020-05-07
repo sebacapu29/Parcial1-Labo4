@@ -27,4 +27,7 @@ export class NavMenuComponent implements OnInit {
   listadoActor(){
     this.router.navigate(['actor/listado']);
   }
+  listadoPaises(){
+    this.router.navigate(['paises/listado']);
+  }
 }

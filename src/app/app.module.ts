@@ -18,6 +18,8 @@ import { TablaActorComponent } from './componentes/tabla-actor/tabla-actor.compo
 import { DetalleActorComponent } from './componentes/detalle-actor/detalle-actor.component';
 import { FormsModule } from '@angular/forms';
 import { FormAltaPeliculaComponent } from './componentes/form-alta-pelicula/form-alta-pelicula.component';
+import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
+import { ListadoPaisesComponent } from './componentes/listado-paises/listado-paises.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FormAltaPeliculaComponent } from './componentes/form-alta-pelicula/form
     NavMenuComponent,
     TablaActorComponent,
     DetalleActorComponent,
-    FormAltaPeliculaComponent
+    FormAltaPeliculaComponent,
+    TablaPaisesComponent,
+    ListadoPaisesComponent
   ],
   imports: [
     BrowserModule,

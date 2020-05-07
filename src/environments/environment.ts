@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  _jsonURLCuriosidades : './assets/data/peliculas.json'
+  _jsonURLCuriosidades : './assets/data/peliculas.json',
+  paisesUrl:'https://restcountries.eu/rest/v2/region/americas'
 };
 
 /*
