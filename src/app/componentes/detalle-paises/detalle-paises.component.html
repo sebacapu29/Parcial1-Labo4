@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;" *ngIf="paisSeleccionado">
+    <img class="card-img-top" [src]="paisSeleccionado.bandera" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{paisSeleccionado.nombre}}</h5>
+      <p class="card-text">Ciudad: {{paisSeleccionado.capital}}</p>
+      <button class="btn btn-danger" >-</button>
+    </div>
+  </div>

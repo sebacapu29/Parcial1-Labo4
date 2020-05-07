@@ -10,6 +10,7 @@ import { PaisesService } from 'src/app/servicios/paises.service';
 export class ListadoPaisesComponent implements OnInit {
 
   listadoPaises:Paises[];
+  paisParaDetalle:Paises;
 
   constructor(private servicePaises:PaisesService) { }
 
@@ -22,9 +23,11 @@ export class ListadoPaisesComponent implements OnInit {
         paisAux.bandera = pais["flag"];
         return paisAux;
       });
- 
-      console.log(this.listadoPaises);
+      // localStorage.setItem("paises",JSON.stringify(this.listadoPaises));
     });
+  }
+  tomarPaisSeleccionado(paisSeleccionado:Paises){
+    this.paisParaDetalle=paisSeleccionado;
   }
 
 }
