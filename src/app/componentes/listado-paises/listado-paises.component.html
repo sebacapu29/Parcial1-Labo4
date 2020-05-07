@@ -3,5 +3,6 @@
 
     <app-tabla-paises [listadoPaises]="listadoPaises"
     (onPaisSeleccionado)="tomarPaisSeleccionado($event)"></app-tabla-paises>
-    <app-detalle-paises [paisSeleccionado]="paisParaDetalle"></app-detalle-paises>
+    <app-detalle-paises [paisSeleccionado]="paisParaDetalle"
+    (deshabilitarPais)="tomarPaisADeshabilitar($event)"></app-detalle-paises>
 </div>

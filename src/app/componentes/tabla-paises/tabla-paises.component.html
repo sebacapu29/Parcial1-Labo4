@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody *ngIf="listadoPaises">
-        <tr *ngFor="let pais of listadoPaises" (click)="paisSeleccionado(pais)">
+        <tr *ngFor="let pais of listadoPaises" (click)="paisSeleccionado(pais)" [hidden]="pais.deshabilitado">
             <td >{{pais.nombre}}</td>
             <td>{{pais.capital}}</td>
             <td>{{pais.foto}}</td>

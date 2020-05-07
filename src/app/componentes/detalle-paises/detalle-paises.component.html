@@ -3,6 +3,6 @@
     <div class="card-body">
       <h5 class="card-title">{{paisSeleccionado.nombre}}</h5>
       <p class="card-text">Ciudad: {{paisSeleccionado.capital}}</p>
-      <button class="btn btn-danger" >-</button>
+      <button class="btn btn-danger" (click)="onDeshabilitarPais()" >Deshabilitar</button>
     </div>
   </div>

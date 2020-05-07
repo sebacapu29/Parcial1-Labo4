@@ -17,17 +17,21 @@ export class ListadoPaisesComponent implements OnInit {
   ngOnInit(): void {
     this.servicePaises.traerPaises().subscribe(data=> {
       this.listadoPaises = data.map(function(pais){
-        var paisAux = new Paises();
-        paisAux.nombre=pais['name'];
-        paisAux.capital = pais["capital"];
-        paisAux.bandera = pais["flag"];
-        return paisAux;
+            var paisAux = new Paises();
+            paisAux.nombre=pais['name'];
+            paisAux.capital = pais["capital"];
+            paisAux.bandera = pais["flag"];
+            paisAux.deshabilitado = false;
+            return paisAux;
       });
       // localStorage.setItem("paises",JSON.stringify(this.listadoPaises));
     });
   }
   tomarPaisSeleccionado(paisSeleccionado:Paises){
-    this.paisParaDetalle=paisSeleccionado;
+        this.paisParaDetalle=paisSeleccionado;
   }
-
+  tomarPaisADeshabilitar(paisADesahabilitar:Paises){
+    console.log(this.paisParaDetalle);
+    this.servicePaises.deshabilitarPais(paisADesahabilitar);
+  }
 }
