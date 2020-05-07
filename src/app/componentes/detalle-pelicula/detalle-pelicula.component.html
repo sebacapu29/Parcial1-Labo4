@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;" *ngIf="peliculaParaDetalle">
+    <img class="card-img-top" [src]="peliculaParaDetalle.foto" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{peliculaParaDetalle.nombre}}</h5>
+      <p class="card-text">Tipo: {{peliculaParaDetalle.tipo}}</p>
+      <p class="card-text">Estreno: {{peliculaParaDetalle.fecha_de_estreno}}</p>
+      <p class="card-text">Cantidad Público: {{peliculaParaDetalle.cantidad_de_publico}}</p>  
+      <button class="btn btn-danger" (click)="onBorrarPelicula()">Borrar</button>
+    </div>
+  </div>

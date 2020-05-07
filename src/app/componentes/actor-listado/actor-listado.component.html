@@ -1,0 +1,7 @@
+<div class="row">
+
+    <app-tabla-actor  [listaActores]="actores"
+    (onActorSeleccionado)="tomarActorParaDetalle($event)"></app-tabla-actor>
+    <app-detalle-actor [actorParaDetalle]="actorSeleccionado"
+    ></app-detalle-actor>
+</div>

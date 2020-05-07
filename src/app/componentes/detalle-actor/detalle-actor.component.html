@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngIf="actorParaDetalle">
+    <img class="card-img-top" [src]="actorParaDetalle.foto" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{actorParaDetalle.nombre}} {{actorParaDetalle.apellido}}</h5>
+      <p class="card-text">Sexo: {{actorParaDetalle.sexo == 'M' ? 'Masculino' : 'Femenino'}}</p>
+      <p class="card-text">Fecha de nacimiento: {{actorParaDetalle.fecha_de_nacimiento}}</p>  
+      <button class="btn btn-warning"></button>
+    </div>
+  </div>

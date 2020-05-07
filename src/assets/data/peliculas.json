@@ -1,0 +1,25 @@
+[{
+    "Id": 1,
+  "nombre": "Silent Hill",
+  "tipo":"terror",
+  "fecha_de_estreno":"2006",
+   "cantidad_de_publico":10000,
+    "foto":"assets/peliculas/silenthill.jpg"
+
+  },
+  { 
+  "Id": 2,
+  "nombre": "Tonto y re tonto",
+  "tipo":"comedia",
+  "fecha_de_estreno":"1994",
+   "cantidad_de_publico":20000,
+    "foto":"assets/peliculas/tontoyretonto.jpg"
+  },
+  {
+  "Id": 3,
+  "nombre": "Jurassic Park",
+  "tipo":"terror",
+  "fecha_de_estreno":"1993",
+   "cantidad_de_publico":30000,
+    "foto":"assets/peliculas/jurassikpark.jpg"
+  }]

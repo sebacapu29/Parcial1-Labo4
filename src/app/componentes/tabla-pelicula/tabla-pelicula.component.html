@@ -1,0 +1,35 @@
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Tipo
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Cantidad De Publico
+            </th>
+            <th>
+                Foto
+            </th>
+        </tr>
+    </thead>
+    <tbody *ngIf="listaPeliculas">
+        <tr *ngFor="let pelicula of listaPeliculas" (click)="onPeliculaSeleccionada(pelicula)">
+            <td >{{pelicula.id}}</td>
+            <td>{{pelicula.nombre}}</td>
+            <td>{{pelicula.tipo}}</td>
+            <td>{{pelicula.fecha}}</td>
+            <td>{{pelicula.cantidad_de_publico}}</td>
+            <td> <img [src]="pelicula.foto"></td>
+        </tr>
+    </tbody>
+</table>

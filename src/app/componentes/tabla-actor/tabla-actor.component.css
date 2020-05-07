@@ -1,0 +1,10 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+tbody tr{
+    cursor: pointer;
+}
+table{
+    width: 50%;
+}

@@ -1,0 +1,5 @@
+<div class="row">
+    <app-tabla-actor [listaActores]="actoresParaAltaPelicula"
+    (onActorSeleccionado)="tomarActorSeleccionado($event)"></app-tabla-actor>
+    <app-form-alta-pelicula [actorSeleccionado]="actorParaFormulario"></app-form-alta-pelicula>
+</div>

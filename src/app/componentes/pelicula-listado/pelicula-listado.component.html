@@ -1,0 +1,7 @@
+<div class="row">
+<app-tabla-pelicula [listaPeliculas]="peliculas"
+                    (peliculaSeleccionada)="tomarPeliculaParaDetalle($event)">
+</app-tabla-pelicula>
+<app-detalle-pelicula [peliculaParaDetalle]="peliculaSeleccionada"
+(peliculaPeraBorrar)="tomarPeliculaParaBorrar($event)"></app-detalle-pelicula>
+</div>
