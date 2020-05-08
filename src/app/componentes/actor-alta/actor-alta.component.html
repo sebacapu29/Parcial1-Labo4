@@ -1,1 +1,6 @@
-<app-tabla-paises [listadoPaises]="listadoPaisesAlta"></app-tabla-paises>
+<div class="row">
+    <app-tabla-paises [listadoPaises]="listadoPaisesAlta"
+    (onPaisSeleccionado)="tomarPaisParaForm($event)"></app-tabla-paises>
+    <app-form-actor [paisSeleccionado]="paisParaForm"></app-form-actor>
+    <app-detalle-paises [paisSeleccionado]="paisParaForm"></app-detalle-paises>
+</div>

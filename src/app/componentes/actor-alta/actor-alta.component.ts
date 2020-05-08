@@ -10,7 +10,8 @@ import { PaisesService } from 'src/app/servicios/paises.service';
 export class ActorAltaComponent implements OnInit {
 
   listadoPaisesAlta:Paises[];
-
+  paisParaForm:Paises;
+  
   constructor(private servicePaises:PaisesService) { }
 
   ngOnInit(): void {
@@ -24,5 +25,7 @@ export class ActorAltaComponent implements OnInit {
       });
     });
   }
-
+  tomarPaisParaForm(pais:Paises){
+    this.paisParaForm = pais;
+  }
 }

@@ -21,6 +21,7 @@ import { FormAltaPeliculaComponent } from './componentes/form-alta-pelicula/form
 import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
 import { ListadoPaisesComponent } from './componentes/listado-paises/listado-paises.component';
 import { DetallePaisesComponent } from './componentes/detalle-paises/detalle-paises.component';
+import { FormActorComponent } from './componentes/form-actor/form-actor.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { DetallePaisesComponent } from './componentes/detalle-paises/detalle-pai
     FormAltaPeliculaComponent,
     TablaPaisesComponent,
     ListadoPaisesComponent,
-    DetallePaisesComponent
+    DetallePaisesComponent,
+    FormActorComponent
   ],
   imports: [
     BrowserModule,
