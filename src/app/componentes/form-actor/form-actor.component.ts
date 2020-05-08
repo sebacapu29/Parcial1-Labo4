@@ -21,7 +21,7 @@ export class FormActorComponent implements OnInit {
     var actores = <Array<Actor>>JSON.parse(localStorage.getItem("actores"));
     this.actorParaAlta.pais_origen = this.paisSeleccionado.nombre;
     this.actorParaAlta.foto="assets/actores/avatar-image.jpg";
-    console.log(this.actorParaAlta.sexo);
+    this.actorParaAlta.fecha_de_nacimiento= this.actorParaAlta.fecha_de_nacimiento["year"] + "/" +this.actorParaAlta.fecha_de_nacimiento["month"]+ "/" +this.actorParaAlta.fecha_de_nacimiento["day"];
     actores.push(this.actorParaAlta);
     localStorage.removeItem("actores");
     localStorage.setItem("actores",JSON.stringify(actores));
